@@ -29,7 +29,8 @@
 }
 
 body{
-    background-image: var(--bg-url)
+    background-image: var(--bg-url);
+    height: 100vh;
 
 }
 
@@ -40,9 +41,10 @@ body *{
 }
 
 #container{
-    width: 360px;
+    width: 100%;
     margin: 56px auto 0;
     padding: 0 24px;
+    max-width: 588px;
 }
 
 #profile{
@@ -157,3 +159,13 @@ ul li a:hover{
     
 }
 
+@media (min-width: 700px){
+    :root {
+        --bg-url: url(./imagens/bg-desktop.jpg);
+    }
+
+    .light{
+        --bg-url: url(./imagens/bg-desktop-light.jpg);
+
+    }
+}
